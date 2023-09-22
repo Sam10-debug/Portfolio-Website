@@ -1,27 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&family=Poppins:wght@300;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    background-color: #090411;
+    font-family: 'Darker Grotesque', sans-serif;
+    /* overflow:hidden; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.aos-init:not(.aos-animate):after {position: fixed;}
+html {
+    scroll-behavior: smooth;
   }
+ul>li:hover{
+    color: #E2D2F6;
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 999;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    
+@media screen and (max-width: 768px) {
+    .hero{
+        margin-top: 60px;
+    }
+   nav ul{
+        flex-direction:column;
+   }
+   header{
+    /* width:fit-content; */
+    overflow-x:hidden;
+   }
+   nav{
+        background-color:#0B0514;
+        position:fixed;
+        left:100%;
+        right:0;
+        bottom:0;
+        top: 52px;;
+        transition: all ease-in-out 1s;
+        padding: 1rem;
+        /* overflow-y:auto;/ */
+   }
+   .show-header{
+    background-color:#0B0514;
+    
+   }
+   .show-nav{
+    border-top: 1px solid gray;
+        left:0;
+        transition: all ease-in-out 1s;
+   }
+
+    
+  }
+
+  @media screen and (width: 768px) {
+    /* Styles for screens with an exact width of 768 pixels */
+    nav{
+        transform: translateX(0%);
+
+    }
+    nav ul{
+        flex-direction: row;
+    }
+  }
