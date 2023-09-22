@@ -36,7 +36,7 @@ const Hero = () => {
     return () => {
       tl.kill();
     };
-  }, []);
+  });
   return (
     <section  className="  hero flex flex-col md:flex-row justify-between md:w-4/5 md:space-x-4 items-center mx-auto px-4 md:px-0" id='hero'>
         <section ref={elementRef} className=" flex-1 ">

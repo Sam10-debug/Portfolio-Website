@@ -9,8 +9,11 @@ const Nav = () => {
   const myHeader = useRef<HTMLDivElement | null>(null);
 
   const handleClick = () => {
-    myRef?.current.classList.toggle("show-nav")
-    myHeader?.current.classList.toggle("show-header")
+
+    const val1== myRef.current!
+    const val2== myHeader.current!
+    val1.classList.toggle("show-nav")
+    val2.current.classList.toggle("show-header")
   };
 
   return (
