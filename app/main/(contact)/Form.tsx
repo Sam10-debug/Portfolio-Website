@@ -39,7 +39,7 @@ const Form = () => {
         field="message"
         errors={state.errors}
         />
-        <button disabled={state.submitting}  className='flex items-center justify-center h-[50px] w-[200px] rounded-[5px] bg-gradient-to-r from-gradient  to-grad text-white md:ml-auto mx-auto md:mx-0'>
+        <button id='form-button' disabled={state.submitting}  className='flex items-center justify-center h-[50px] w-[200px] rounded-[5px] bg-gradient-to-r from-gradient  to-grad text-white md:ml-auto mx-auto md:mx-0'>
           Send
         </button>
 </form>

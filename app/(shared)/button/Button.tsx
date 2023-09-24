@@ -11,7 +11,7 @@ interface buttonProps {
   
 
 const Button:React.FC<buttonProps> = ({text,className,href}) => {
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const buttonRef = useRef<HTMLAnchorElement >(null);
 
   useEffect(() => {
     const button = buttonRef.current;
@@ -57,8 +57,8 @@ const Button:React.FC<buttonProps> = ({text,className,href}) => {
     };
   }, []);
   return (
-    <Link target='_blank' href={`${href}`} className={`${className}`}>
-      <button ref={buttonRef}  >
+    <Link ref={buttonRef} target='_blank' href={`${href}`} className={`${className}`}>
+      <button   >
         {text}
     </button>
     </Link>
