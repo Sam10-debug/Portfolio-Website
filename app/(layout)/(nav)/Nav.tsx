@@ -5,15 +5,14 @@ import Link from "next/link"
 
 
 const Nav = () => {
-  const myRef = useRef<HTMLDivElement | null>(null);
-  const myHeader = useRef<HTMLDivElement | null>(null);
+  let myRef = useRef<HTMLDivElement | null>(null);
+  let myHeader = useRef<HTMLDivElement | null>(null);
 
   const handleClick = () => {
 
-    const val1== myRef.current!
-    const val2== myHeader.current!
-    val1.classList.toggle("show-nav")
-    val2.current.classList.toggle("show-header")
+    
+    myRef?.classList.toggle("show-nav")
+    myHeader?.current.classList.toggle("show-header")
   };
 
   return (

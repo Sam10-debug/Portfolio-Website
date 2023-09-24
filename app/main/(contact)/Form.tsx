@@ -21,19 +21,19 @@ const Form = () => {
   }
   return (
     <form data-aos="zoom-in" onSubmit={handleSubmit} className=" flex flex-col space-y-4 flex-1 mt-8 md:mt-0">
-        <input type="text" name="name" placeholder="Name:" className="h-[60px] text-white rounded-[5px] bg-formColor px-[23px] py-[24px]" />
+        <input type="text" name="name" required placeholder="Name:" className="h-[60px] text-white rounded-[5px] bg-formColor px-[23px] py-[24px]" />
         <ValidationError 
         prefix="Name" 
         field="name"
         errors={state.errors}
         />
-        <input type="email" name="senderEmail" placeholder="Email:" className="h-[60px] text-white rounded-[5px] bg-formColor px-[23px] py-[24px]" />
+        <input type="email" name="senderEmail" required placeholder="Email:" className="h-[60px] text-white rounded-[5px] bg-formColor px-[23px] py-[24px]" />
         <ValidationError 
         prefix="Email" 
         field="email"
         errors={state.errors}
         />
-        <textarea placeholder="Message:" name="message" id="" cols="30" rows="10" className=" bg-formColor  text-white rounded-[5px] px-[23px] py-[24px]"></textarea>
+        <textarea required placeholder="Message:" name="message" id="" cols="30" rows="10" className=" bg-formColor  text-white rounded-[5px] px-[23px] py-[24px]"></textarea>
         <ValidationError 
         prefix="Message" 
         field="message"
