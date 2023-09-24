@@ -11,8 +11,8 @@ const Nav = () => {
   const handleClick = () => {
 
     
-    myRef?.classList.toggle("show-nav")
-    myHeader?.current.classList.toggle("show-header")
+    myRef?.current.classList.toggle("show-nav")
+    myHeader?.current.current.classList.toggle("show-header")
   };
 
   return (
