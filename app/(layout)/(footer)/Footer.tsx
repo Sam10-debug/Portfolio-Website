@@ -4,7 +4,7 @@ import Image from "next/image"
 const Footer = () => {
   return (
    <footer className=' md:bg-gradient-to-r from-gradient via-grads to-grad flex justify-between md:h-[150px] items-center px-[100px]'>
-     <div className=" flex md:hidden space-x-[18px] my-auto py-4 items-center">
+     <div className="icons flex md:hidden space-x-[18px] my-auto py-4 items-center">
               <Link target='_blank'  href='https://twitter.com/Emor__Musk'><Image  src='/twitter.svg' alt='' width={100} height={100} /></Link>
               <Link target='_blank'  href='https://www.linkedin.com/in/samuel-emorinken-401b10203/'><Image  src='/Linkedin.svg' alt='' width={100} height={100} /></Link>
               <Link target='_blank'  href='https://github.com/Sam10-debug'><Image  src='/Github.svg' alt='' width={100} height={100} /></Link>
@@ -20,7 +20,7 @@ const Footer = () => {
           <li className=""><Link href="#home">Home</Link></li>
           <li className=" whitespace-nowrap"><Link href="#about">About Me</Link></li>
           <li className=""><Link href="#projects">Projects</Link></li>
-          <li className=" border-[2px] md:h-[30px] border-white w-[110px] md:flex items-center justify-center rounded-[5px]"><Link href="/">Resume</Link></li>
+          <li className=" border-[2px] md:h-[30px] border-white w-[110px] md:flex items-center justify-center rounded-[5px]"><Link href="https://docs.google.com/document/d/184PlRm6z6OCWWOlS1dqurDJX1wEFE_G4k9HH8yySEoQ/edit?usp=sharing" target='_blank'>Resume</Link></li>
         </ul>
    </footer>
   )

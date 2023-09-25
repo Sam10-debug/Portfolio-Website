@@ -35,7 +35,7 @@ const Nav = () => {
           <li className=""><Link href="#home">Home</Link></li>
           <li className=" whitespace-nowrap"><Link href="#about">About Me</Link></li>
           <li className=""><Link href="#projects">Projects</Link></li>
-          <li className=" md:border-[2px] md:h-[30px] md:border-gradient md:w-[110px] md:flex items-center justify-center md:rounded-[5px]"><Link href="/">Resume</Link></li>
+          <li className=" md:border-[2px] md:h-[30px] md:border-gradient md:w-[110px] md:flex items-center justify-center md:rounded-[5px]"><Link target='_blank' href="https://docs.google.com/document/d/184PlRm6z6OCWWOlS1dqurDJX1wEFE_G4k9HH8yySEoQ/edit?usp=sharing">Resume</Link></li>
         </ul>
       </nav>
       <div onClick={handleClick} className="container  flex md:hidden justify-between items-center">
