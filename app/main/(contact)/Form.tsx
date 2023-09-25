@@ -33,7 +33,7 @@ const Form = () => {
         field="email"
         errors={state.errors}
         />
-        <textarea required placeholder="Message:" name="message" id="" cols="30" rows="10" className=" bg-formColor  text-white rounded-[5px] px-[23px] py-[24px]"></textarea>
+        <textarea required placeholder="Message:" name="message" id="" cols={30} rows={10} className=" bg-formColor  text-white rounded-[5px] px-[23px] py-[24px]"></textarea>
         <ValidationError 
         prefix="Message" 
         field="message"
