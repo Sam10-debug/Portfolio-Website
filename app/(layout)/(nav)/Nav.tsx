@@ -7,10 +7,17 @@ import Link from "next/link"
 const Nav = () => {
   let myRef:any = useRef();
   let myHeader:any = useRef();
+  const navRef:any= useRef<HTMLElement>()
+	const first:any= useRef<SVGSVGElement>()
+	const second:any= useRef<SVGSVGElement>()
+	const third:any= useRef<SVGSVGElement>()
 
   const handleClick = () => {
 
-    
+    navRef?.current?.classList.toggle("showNav")
+	first?.current?.classList.toggle("show")
+	second?.current?.classList.toggle("remove")
+	third?.current?.classList.toggle("showw")    
     myRef?.current.classList.toggle("show-nav")
     myHeader?.current.classList.toggle("show-header")
   };
@@ -35,15 +42,20 @@ const Nav = () => {
           <li className=""><Link href="#home">Home</Link></li>
           <li className=" whitespace-nowrap"><Link href="#about">About Me</Link></li>
           <li className=""><Link href="#projects">Projects</Link></li>
-          <li className=" md:border-[2px] md:h-[30px] md:border-gradient md:w-[110px] md:flex items-center justify-center md:rounded-[5px]"><Link target='_blank' href="https://docs.google.com/document/d/184PlRm6z6OCWWOlS1dqurDJX1wEFE_G4k9HH8yySEoQ/edit?usp=sharing">Resume</Link></li>
+          <li className=" md:border-[2px] md:h-[30px] md:border-gradient md:w-[110px] md:flex items-center justify-center md:rounded-[5px]"><Link target='_blank' href="/resume_tech.pdf" >Resume</Link></li>
         </ul>
       </nav>
-      <div onClick={handleClick} className="container  flex md:hidden justify-between items-center">
-      <svg className="ml-auto fixed top-4 right-2" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5 22.5H25C25.6875 22.5 26.25 21.9375 26.25 21.25C26.25 20.5625 25.6875 20 25 20H5C4.3125 20 3.75 20.5625 3.75 21.25C3.75 21.9375 4.3125 22.5 5 22.5ZM5 16.25H25C25.6875 16.25 26.25 15.6875 26.25 15C26.25 14.3125 25.6875 13.75 25 13.75H5C4.3125 13.75 3.75 14.3125 3.75 15C3.75 15.6875 4.3125 16.25 5 16.25ZM3.75 8.75C3.75 9.4375 4.3125 10 5 10H25C25.6875 10 26.25 9.4375 26.25 8.75C26.25 8.0625 25.6875 7.5 25 7.5H5C4.3125 7.5 3.75 8.0625 3.75 8.75Z" fill="white"/>
-      </svg>
-
-      </div>
+      <div onClick={handleClick}  className='hamburger container  w-fit  flex md:hidden justify-between items-center'>
+			<svg ref={first} width="21" className=" " height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1.38647 1H19.3865" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+			</svg>
+			<svg ref={second} width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1.38647 1H19.3865" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+			</svg>
+			<svg ref={third} width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1.38647 1H19.3865" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+			</svg>
+		</div>
     </header>
   )
 }

@@ -20,7 +20,7 @@ const Footer = () => {
           <li className=""><Link href="#home">Home</Link></li>
           <li className=" whitespace-nowrap"><Link href="#about">About Me</Link></li>
           <li className=""><Link href="#projects">Projects</Link></li>
-          <li className=" border-[2px] md:h-[30px] border-white w-[110px] md:flex items-center justify-center rounded-[5px]"><Link href="https://docs.google.com/document/d/184PlRm6z6OCWWOlS1dqurDJX1wEFE_G4k9HH8yySEoQ/edit?usp=sharing" target='_blank'>Resume</Link></li>
+          <li className=" border-[2px] md:h-[30px] border-white w-[110px] md:flex items-center justify-center rounded-[5px]"><Link href="/resume_tech.pdf" target='_blank'>Resume</Link></li>
         </ul>
    </footer>
   )

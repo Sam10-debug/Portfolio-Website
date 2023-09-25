@@ -27,7 +27,7 @@ const SuperPowers=()=>{
 
     return (
         <section className="">
-            <h3 data-aos="zoom-in" className="text-[20px] md:text-[30px] text-supText font-bold text-center my-8">My Superpowers</h3>
+            <h3 data-aos="zoom-in" className="text-[20px] md:text-[24px] lg:text-[30px] text-supText font-bold text-center my-8">My Superpowers</h3>
             <div data-aos="zoom-in-right"  className=" flex flex-wrap lg:space-y-0 space-y-4 space-x-4 md:space-x-8 lg:space-x-16 justify-center rounded-[10px] border-stroke bg-dark_gradient border-[1px] w-[90%] md:w-4/5 mx-auto py-8">
                 {mapped}
             </div>
