@@ -5,8 +5,8 @@ import Link from "next/link"
 
 
 const Nav = () => {
-  let myRef = useRef<HTMLElement>(document.createElement('nav'));
-  let myHeader = useRef<HTMLElement>(document.createElement('header'));
+  let myRef:any = useRef();
+  let myHeader:any = useRef();
 
   const handleClick = () => {
 
