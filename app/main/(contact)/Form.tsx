@@ -3,7 +3,6 @@
 import  { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Button from "@/app/(shared)/button/Button"
 import { useForm, ValidationError } from '@formspree/react';
 
 const Form = () => {

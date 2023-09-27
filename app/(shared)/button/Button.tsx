@@ -7,10 +7,11 @@ interface buttonProps {
     text: string;
     className:string;
     href:string;
+    target:string;
   }
   
 
-const Button:React.FC<buttonProps> = ({text,className,href}) => {
+const Button:React.FC<buttonProps> = ({text,className,href,target}) => {
   const buttonRef = useRef<HTMLAnchorElement >(null);
 
   useEffect(() => {
@@ -57,7 +58,7 @@ const Button:React.FC<buttonProps> = ({text,className,href}) => {
     };
   }, []);
   return (
-    <Link ref={buttonRef} target='_blank' href={`${href}`} className={`${className}`}>
+    <Link ref={buttonRef} target={target}  href={`${href}`} className={`${className}`}>
       <button   >
         {text}
     </button>

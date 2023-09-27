@@ -6,7 +6,7 @@ import Contact from "../(contact)/Contact"
 
 const Container = () => {
   return (
-   <main className="mt-24 ">
+   <main className="mt-48 ">
     <Hero />
      <About />
      <SuperPowers />

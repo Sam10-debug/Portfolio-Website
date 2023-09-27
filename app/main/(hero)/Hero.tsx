@@ -44,8 +44,8 @@ const Hero = () => {
             <h1 className=" lg:text-[80px] md:text-[56px] xl:text-[100px] text-[45px] text-center md:text-left bg-clip-text text-transparent bg-gradient-to-r from-gradient  to-grad font-bold leading-[auto]">Emor Musk</h1>
             <p className="  font-medium lg:text-[20px] md:text-[18px] text-[17.5] text-center md:text-left xl:text-[25px] leading-[150.6%] text-white flex-1 justify-center items-center">I&apos;m a dedicated front-end developer with over 3 years of experience in crafting stunning web experiences. I specialize in creating responsive and <br />pixel-perfect websites.</p>
             <div className=" md:space-x-8 py-8 flex flex-col md:flex-row space-y-2 md:space-y-0">
-            <Button className='lg:w-[176px] md:w-[120px] lg:h-[45px] h-[45px] hover:text-gradient rounded-sm border-[1px] border-gradient text-white font-semibold flex justify-center items-center' text='Projects' href='#projects' />
-            <Button className='lg:w-[176px] lg:h-[45px] md:w-[120px] h-[45px] hover:bg-light_gradient  rounded-sm  bg-gradient-to-r from-gradient  to-grad text-white font-semibold flex justify-center items-center' text='Hire Me' href='#contacts' />
+            <Button className='lg:w-[176px] md:w-[120px] lg:h-[45px] h-[45px] hover:text-gradient rounded-sm border-[1px] border-gradient text-white font-semibold flex justify-center items-center' text='Projects' href='#projects' target='' />
+            <Button className='lg:w-[176px] lg:h-[45px] md:w-[120px] h-[45px] hover:bg-light_gradient  rounded-sm  bg-gradient-to-r from-gradient  to-grad text-white font-semibold flex justify-center items-center' text='Hire Me' href='#contacts' target='' />
             </div>
         </section>
         <section ref={elementRef1} className=" flex-1 flex justify-center items-center">

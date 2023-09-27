@@ -6,7 +6,6 @@ import Link from "next/link"
 
 const Nav = () => {
   let myRef:any = useRef();
-  let myHeader:any = useRef();
   const navRef:any= useRef<HTMLElement>()
 	const first:any= useRef<SVGSVGElement>()
 	const second:any= useRef<SVGSVGElement>()
@@ -19,11 +18,10 @@ const Nav = () => {
 	second?.current?.classList.toggle("remove")
 	third?.current?.classList.toggle("showw")    
     myRef?.current.classList.toggle("show-nav")
-    myHeader?.current.classList.toggle("show-header")
   };
 
   return (
-    <header ref={myHeader} className="md:py-8 md:px-[72px] px-[20px] py-[15px] md:flex justify-between ">
+    <header className="md:py-8 md:px-[72px] px-[20px] py-[15px] md:flex justify-between items-center ">
       <div className="container mx-auto flex justify-between items-center">
       <svg width="149" height="22" viewBox="0 0 149 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.98 21.5V1.7H15.41V4.85H4.79V10.01H14V12.92H4.79V18.32H15.44V21.5H0.98ZM17.9973 21.5V12.32V5.84H21.1773L21.0573 11.36H21.5073C22.1373 7.25 23.8173 5.42 26.5173 5.42C29.3673 5.42 30.7473 7.46 30.8373 11.33H31.2573C31.8873 7.22 33.7773 5.42 36.5073 5.42C40.9773 5.42 41.5173 10.37 41.5173 13.16V21.5H37.7073V13.61C37.7073 12.05 37.6473 8.75 35.1573 8.75C33.0873 8.75 31.7373 11.15 31.6173 14.9V21.5H27.8973V13.76C27.8973 12.23 27.8973 8.75 25.3173 8.75C23.2473 8.75 21.8973 11.12 21.8073 14.93V21.5H17.9973ZM52.0011 21.89C47.4111 21.89 44.2011 19.07 44.2011 13.64C44.2011 8.09 47.5311 5.42 51.9711 5.42C56.5011 5.42 59.7711 8.21 59.7711 13.7C59.7711 19.28 56.3811 21.89 52.0011 21.89ZM52.0911 19.01C54.1611 19.01 55.9311 17.6 55.9311 13.88C55.9311 10.04 54.0411 8.45 51.8511 8.45C49.8411 8.45 48.0411 9.86 48.0411 13.58C48.0411 17.42 49.8711 19.01 52.0911 19.01ZM62.6457 21.5V13.58V5.84H65.9157L65.7657 11.69H66.2457C66.6657 7.4 68.1657 5.45 70.8957 5.45C71.3757 5.45 71.8857 5.54 72.5157 5.75L72.3357 9.83C71.6757 9.53 70.9557 9.38 70.3557 9.38C68.0457 9.38 66.7857 11.42 66.4557 14.75V21.5H62.6457Z" fill="url(#paint0_linear_87_685)"/>
