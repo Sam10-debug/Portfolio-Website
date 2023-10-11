@@ -26,6 +26,22 @@ const Project = () => {
             <p className="text-[17.5px] md:w-3/4 md:text-center px-4 md:px-0 md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
         </div>
         <section className="mt-8 rounded-[10px] md:w-4/5 mx-auto bg-dark_gradient shadow-lg border-stroke border-[2px] py-4 md:px-8 px-4 space-y-10">
+        <div data-aos="zoom-in" className=" rounded-[15px] bg-crappo flex flex-col lg:flex-row lg:space-x-12 p-8">
+        <div className=" flex justify-center items-center">
+                <Image
+            src="/images/Screenshot (112).png"
+            width={400}
+            height={400}
+            alt="Picture of the getLinked hackathon website"
+            
+        />
+        </div>
+        <div className=" flex flex-col text-center lg:text-left mt-8 md:mt-0 md:space-y-4  justify-between">
+            <h4 className="text-[22px] md:text-[26px] lg:text-[30px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-gradient  to-grad">getLinked Hackathon Website </h4>
+            <p className="text-[17.5px] md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">This is an hackathon i participated in and the project was built with NextJs13 and TailwindCSS</p>
+            <Button target='_blank' href="https://get-linked-murex.vercel.app/" text='View Live' className='bg-gradient-to-r from-gradient  to-grad text-white rounded-[5px] w-full  lg:w-[160px] h-[42.5px] flex justify-center items-center' />
+        </div>
+            </div>
             <div data-aos="zoom-in" className=" rounded-[15px] bg-crappo flex flex-col lg:flex-row lg:space-x-12 p-8">
         <div className=" flex justify-center items-center">
                 <Image
@@ -38,7 +54,7 @@ const Project = () => {
         </div>
         <div  className=" flex flex-col text-center lg:text-left mt-8 md:mt-0 md:space-y-4  justify-between">
             <h4 className="text-[22px] md:text-[26px] lg:text-[30px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-gradient  to-grad">Crappo Web Landing Page</h4>
-            <p className="text-[17.5px] md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">- This is a crypto website built with the JavaScript library, React and the
+            <p className="text-[17.5px] md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">This is a crypto website built with the JavaScript library, React and the
             animation library AOS( animation on scroll)</p>
             <Button target='_blank' href="http://crappo-web-app.vercel.app/"  text='View Live' className='bg-gradient-to-r from-gradient  to-grad text-white rounded-[5px] w-full  lg:w-[160px] h-[42.5px] flex justify-center items-center' />
         </div>
@@ -58,22 +74,6 @@ const Project = () => {
             <p className="text-[17.5px] md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">-  This a mock music app website built with NextJS and TailwindCss</p>
            
             <Button target='_blank' href="https://musica-app-two.vercel.app/" text='View Live' className='bg-gradient-to-r from-gradient  to-grad text-white rounded-[5px] w-full  lg:w-[160px] h-[42.5px] flex justify-center items-center' />
-        </div>
-            </div>
-            <div data-aos="zoom-in" className=" rounded-[15px] bg-crappo flex flex-col lg:flex-row lg:space-x-12 p-8">
-        <div className=" flex justify-center items-center">
-                <Image
-            src="/images/shopping-cart.png"
-            width={400}
-            height={400}
-            alt="Picture of the mock sneaker shopping cart web app"
-            
-        />
-        </div>
-        <div className=" flex flex-col text-center lg:text-left mt-8 md:mt-0 md:space-y-4  justify-between">
-            <h4 className="text-[22px] md:text-[26px] lg:text-[30px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-gradient  to-grad">Mock Sneakers Shopping App</h4>
-            <p className="text-[17.5px] md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">This is a mock shopping website built out with the JavaScript library, React</p>
-            <Button target='_blank' href="https://splendid-sfogliatella-8b42ab.netlify.app/" text='View Live' className='bg-gradient-to-r from-gradient  to-grad text-white rounded-[5px] w-full  lg:w-[160px] h-[42.5px] flex justify-center items-center' />
         </div>
             </div>
             <div className="flex justify-center items-center w-full">
