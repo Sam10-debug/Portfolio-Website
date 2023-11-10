@@ -50,9 +50,9 @@ const Hero = () => {
         </section>
         <section ref={elementRef1} className=" flex-1 flex justify-center items-center">
             <Image
-            src="/images/Frame 4.png"
-            width={300}
-            height={300}
+            src="/images/profile_picture.png"
+            width={400}
+            height={400}
             alt="Picture of the Developer"
         />
         </section>

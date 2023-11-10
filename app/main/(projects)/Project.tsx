@@ -29,6 +29,22 @@ const Project = () => {
         <div data-aos="zoom-in" className=" rounded-[15px] bg-crappo flex flex-col lg:flex-row lg:space-x-12 p-8">
         <div className=" flex justify-center items-center">
                 <Image
+            src="/images/candleaf.png"
+            width={400}
+            height={400}
+            alt="Picture of the Candleaf ecommerce website"
+            
+        />
+        </div>
+        <div className=" flex flex-col text-center lg:text-left mt-8 md:mt-0 md:space-y-4  justify-between">
+            <h4 className="text-[22px] md:text-[26px] lg:text-[30px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-gradient  to-grad">Candleaf e-Commerce Website </h4>
+            <p className="text-[17.5px] md:text-[19px] lg:text-[22.5px] font-medium leading-[32px] text-white">This is an ecommerce website i built out with NextJs and TailwindCSS</p>
+            <Button target='_blank' href="https://candleaf-one.vercel.app/" text='View Live' className='bg-gradient-to-r from-gradient  to-grad text-white rounded-[5px] w-full  lg:w-[160px] h-[42.5px] flex justify-center items-center' />
+        </div>
+            </div>
+        <div data-aos="zoom-in" className=" rounded-[15px] bg-crappo flex flex-col lg:flex-row lg:space-x-12 p-8">
+        <div className=" flex justify-center items-center">
+                <Image
             src="/images/Screenshot (112).png"
             width={400}
             height={400}
